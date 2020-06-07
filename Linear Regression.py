@@ -19,7 +19,7 @@ y = np.array(data[predict])
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size=0.1)
 
 #Train Model Multiple times to get best score
-"""best = 0
+best = 0
 for _ in range(30):
     x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size=0.1)
 
@@ -32,7 +32,7 @@ for _ in range(30):
     if acc > best:
         best = acc
         with open("studentmodel.pickle", "wb") as f:
-            pickle.dump(linear, f)"""
+            pickle.dump(linear, f)
 
 #Load Model
 pickle_in = open("studentmodel.pickle", "rb")
